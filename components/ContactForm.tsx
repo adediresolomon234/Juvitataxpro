@@ -9,6 +9,7 @@ const API_BASE =
     /\/$/,
     ""
   );
+const HONEYPOT_FIELD = "taxpro_referrer_code";
 
 type Errors = Partial<
   Record<"firstName" | "lastName" | "email" | "phone", string>
@@ -40,7 +41,7 @@ export default function ContactForm() {
     const get = (k: string) => String(data.get(k) ?? "").trim();
 
     // Honeypot: hidden field only bots fill in.
-    if (get("company_website") !== "") {
+    if (get(HONEYPOT_FIELD) !== "") {
       router.push("/thank-you");
       return;
     }
@@ -79,7 +80,6 @@ export default function ContactForm() {
       annual_return_volume: get("volume"),
       services_interested: interest ? [interest] : [],
       message: get("message"),
-      company_website: get("company_website"),
     };
 
     setSubmitting(true);
@@ -121,13 +121,13 @@ export default function ContactForm() {
         <form ref={formRef} onSubmit={handleSubmit} noValidate>
           {/* Honeypot — hidden from humans, catches bots */}
           <div className="hp-field" aria-hidden="true">
-            <label htmlFor="company_website">Leave this field empty</label>
+            <label htmlFor={HONEYPOT_FIELD}>Leave this field empty</label>
             <input
               type="text"
-              id="company_website"
-              name="company_website"
+              id={HONEYPOT_FIELD}
+              name={HONEYPOT_FIELD}
               tabIndex={-1}
-              autoComplete="off"
+              autoComplete="new-password"
             />
           </div>
 
