@@ -10,7 +10,7 @@ npm-debug.log*
 /.vercel
 *.tsbuildinfo
 test-demo-request.pdf
-
+.env
 # local submissions database
 /data
 *.ndjson

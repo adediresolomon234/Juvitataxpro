@@ -4,6 +4,11 @@ import { useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+const API_BASE =
+  (process.env.NEXT_PUBLIC_API_BASE_URL || "https://tax.myco.com.ng").replace(
+    /\/$/,
+    ""
+  );
 
 type Errors = Partial<
   Record<"firstName" | "lastName" | "email" | "phone", string>
@@ -62,34 +67,33 @@ export default function ContactForm() {
 
     setErrors({});
 
+    // Build Mailbot API snake_case payload
+    const interest = get("interest");
     const payload = {
-      firstName: first,
-      lastName: last,
-      businessName: get("businessName"),
+      first_name: first,
+      last_name: last,
+      business_name: get("businessName"),
       email,
-      phone,
-      locations: get("locations"),
-      volume: get("volume"),
-      interest: get("interest"),
+      phone_number: phone,
+      number_of_locations: get("locations"),
+      annual_return_volume: get("volume"),
+      services_interested: interest ? [interest] : [],
       message: get("message"),
       company_website: get("company_website"),
     };
 
     setSubmitting(true);
-    // The server validates again, builds a PDF of the details, and emails it.
-    fetch("/api/contact", {
+    // POST directly to the external backend — it handles storage and emails.
+    fetch(`${API_BASE}/contact`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),
     })
       .then(async (res) => {
         const result = await res.json().catch(() => ({}));
-        if (res.ok && result.ok) {
+        if (res.ok) {
           form.reset();
-          const params = new URLSearchParams();
-          if (result.downloadToken) params.set("dl", result.downloadToken);
-          const qs = params.toString();
-          router.push(`/thank-you${qs ? `?${qs}` : ""}`);
+          router.push("/thank-you");
         } else {
           setSubmitError(
             result.error ||

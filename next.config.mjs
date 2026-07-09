@@ -7,7 +7,18 @@ const isDev = process.env.NODE_ENV !== "production";
 const scriptSrc = isDev
   ? "'self' 'unsafe-inline' 'unsafe-eval'"
   : "'self' 'unsafe-inline'";
-const connectSrc = isDev ? "'self' ws: wss: http: https:" : "'self'";
+const backendOrigin = (() => {
+  try {
+    return new URL(
+      process.env.NEXT_PUBLIC_API_BASE_URL || "https://tax.myco.com.ng"
+    ).origin;
+  } catch {
+    return "https://tax.myco.com.ng";
+  }
+})();
+const connectSrc = isDev
+  ? "'self' ws: wss: http: https:"
+  : `'self' ${backendOrigin}`;
 
 const csp = [
   "default-src 'self'",
