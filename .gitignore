@@ -1,0 +1,16 @@
+/node_modules
+/.next
+/.next.broken
+/out
+/build
+.DS_Store
+*.pem
+npm-debug.log*
+.env*.local
+/.vercel
+*.tsbuildinfo
+test-demo-request.pdf
+
+# local submissions database
+/data
+*.ndjson
