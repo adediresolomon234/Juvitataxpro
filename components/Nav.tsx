@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -32,7 +33,14 @@ export default function Nav() {
   return (
     <nav>
       <Link href="/" className="nav-logo" aria-label="Go to home">
-        <div className="nav-logo-mark">JT</div>
+        <Image
+          src="/logo-icon.png"
+          alt="Juvida Tax Pro"
+          width={44}
+          height={36}
+          className="nav-logo-mark"
+          priority
+        />
         <div className="nav-logo-text">
           Juvida Tax <span>Pro</span>
         </div>

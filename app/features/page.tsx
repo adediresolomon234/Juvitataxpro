@@ -48,7 +48,7 @@ export default function FeaturesPage() {
           <div className="mockup-cell full">Office: Main St.</div>
           <div className="mockup-cell full">Fee: $285</div>
         </div>
-        <div style={{ marginTop: "14px", padding: "12px", background: "rgba(200,168,75,0.08)", borderRadius: "8px", border: "1px solid rgba(200,168,75,0.2)" }}>
+        <div style={{ marginTop: "14px", padding: "12px", background: "rgba(11,155,68,0.08)", borderRadius: "8px", border: "1px solid rgba(11,155,68,0.2)" }}>
           <div style={{ fontSize: "11px", color: "rgba(255,255,255,0.4)", marginBottom: "8px", letterSpacing: "0.08em", textTransform: "uppercase" }}>EITC Due Diligence</div>
           <div style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>
             <span style={{ background: "rgba(75,200,120,0.15)", color: "#4BC878", border: "1px solid rgba(75,200,120,0.3)", fontSize: "11px", padding: "3px 9px", borderRadius: "4px" }}>✓ Form 8867</span>
@@ -82,25 +82,25 @@ export default function FeaturesPage() {
         </div>
         <div style={{ fontSize: "11px", color: "rgba(255,255,255,0.35)", marginBottom: "14px", letterSpacing: "0.08em", textTransform: "uppercase" }}>Bureau Overview — All Offices</div>
         <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: "10px", padding: "10px 12px", background: "rgba(200,168,75,0.1)", border: "1px solid rgba(200,168,75,0.2)", borderRadius: "8px" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "10px", padding: "10px 12px", background: "rgba(11,155,68,0.1)", border: "1px solid rgba(11,155,68,0.2)", borderRadius: "8px" }}>
             <div style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#4BC878", flexShrink: "0" }}></div>
             <span style={{ fontSize: "13px", color: "rgba(255,255,255,0.8)", flex: "1" }}>Main Street Office</span>
-            <span style={{ fontSize: "12px", color: "var(--gold)", fontWeight: "600" }}>482 returns</span>
+            <span style={{ fontSize: "12px", color: "var(--green)", fontWeight: "600" }}>482 returns</span>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: "10px", padding: "10px 12px", background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.06)", borderRadius: "8px" }}>
             <div style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#4BC878", flexShrink: "0" }}></div>
             <span style={{ fontSize: "13px", color: "rgba(255,255,255,0.8)", flex: "1" }}>Westside Branch</span>
-            <span style={{ fontSize: "12px", color: "var(--gold)", fontWeight: "600" }}>317 returns</span>
+            <span style={{ fontSize: "12px", color: "var(--green)", fontWeight: "600" }}>317 returns</span>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: "10px", padding: "10px 12px", background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.06)", borderRadius: "8px" }}>
             <div style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#FEBC2E", flexShrink: "0" }}></div>
             <span style={{ fontSize: "13px", color: "rgba(255,255,255,0.8)", flex: "1" }}>Northgate Pop-Up</span>
-            <span style={{ fontSize: "12px", color: "var(--gold)", fontWeight: "600" }}>96 returns</span>
+            <span style={{ fontSize: "12px", color: "var(--green)", fontWeight: "600" }}>96 returns</span>
           </div>
         </div>
         <div style={{ marginTop: "14px", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "8px" }}>
           <div style={{ background: "rgba(255,255,255,0.04)", borderRadius: "8px", padding: "12px", textAlign: "center" }}>
-            <div style={{ fontSize: "20px", fontFamily: "var(--font-playfair), serif", fontWeight: "700", color: "var(--gold)" }}>$142K</div>
+            <div style={{ fontSize: "20px", fontFamily: "var(--font-playfair), serif", fontWeight: "700", color: "var(--green)" }}>$142K</div>
             <div style={{ fontSize: "11px", color: "rgba(255,255,255,0.35)", marginTop: "4px" }}>Revenue MTD</div>
           </div>
           <div style={{ background: "rgba(255,255,255,0.04)", borderRadius: "8px", padding: "12px", textAlign: "center" }}>
@@ -127,16 +127,16 @@ export default function FeaturesPage() {
         </ul>
       </div>
       <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-        <div style={{ background: "var(--white)", border: "1px solid rgba(11,28,61,0.06)", borderRadius: "12px", padding: "22px" }}>
+        <div style={{ background: "var(--white)", border: "1px solid rgba(1,36,78,0.06)", borderRadius: "12px", padding: "22px" }}>
           <div style={{ fontSize: "12px", fontWeight: "600", color: "var(--text-muted)", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: "14px" }}>Refund Timeline</div>
           <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <div style={{ width: "32px", height: "32px", borderRadius: "50%", background: "var(--gold-pale)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "12px", fontWeight: "700", color: "var(--gold)", flexShrink: "0" }}>1</div>
+              <div style={{ width: "32px", height: "32px", borderRadius: "50%", background: "var(--green-pale)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "12px", fontWeight: "700", color: "var(--green)", flexShrink: "0" }}>1</div>
               <div><div style={{ fontSize: "13px", fontWeight: "600", color: "var(--navy)" }}>Return Accepted</div><div style={{ fontSize: "11px", color: "var(--text-muted)" }}>Same day</div></div>
             </div>
             <div style={{ width: "1px", height: "14px", background: "var(--border)", marginLeft: "16px" }}></div>
             <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <div style={{ width: "32px", height: "32px", borderRadius: "50%", background: "var(--gold-pale)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "12px", fontWeight: "700", color: "var(--gold)", flexShrink: "0" }}>2</div>
+              <div style={{ width: "32px", height: "32px", borderRadius: "50%", background: "var(--green-pale)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "12px", fontWeight: "700", color: "var(--green)", flexShrink: "0" }}>2</div>
               <div><div style={{ fontSize: "13px", fontWeight: "600", color: "var(--navy)" }}>IRS Processes Refund</div><div style={{ fontSize: "11px", color: "var(--text-muted)" }}>8–21 days</div></div>
             </div>
             <div style={{ width: "1px", height: "14px", background: "var(--border)", marginLeft: "16px" }}></div>
@@ -170,7 +170,7 @@ export default function FeaturesPage() {
             <li><div className="plan-check">✓</div>Client portal access</li>
             <li><div className="plan-check">✓</div>Email support</li>
           </ul>
-          <Link href="/contact" className="btn-primary" style={{ width: "100%", justifyContent: "center", background: "var(--navy)", color: "white", border: "1px solid rgba(200,168,75,0.3)" }}>Get Started</Link>
+          <Link href="/contact" className="btn-primary" style={{ width: "100%", justifyContent: "center", background: "var(--navy)", color: "white", border: "1px solid rgba(11,155,68,0.3)" }}>Get Started</Link>
         </div>
         <div className="plan-card featured">
           <div className="plan-badge">Most Popular</div>
@@ -203,7 +203,7 @@ export default function FeaturesPage() {
             <li><div className="plan-check">✓</div>2-hour SLA support</li>
             <li><div className="plan-check">✓</div>Revenue share program</li>
           </ul>
-          <Link href="/contact" className="btn-primary" style={{ width: "100%", justifyContent: "center", background: "var(--navy)", color: "white", border: "1px solid rgba(200,168,75,0.3)" }}>Contact Sales</Link>
+          <Link href="/contact" className="btn-primary" style={{ width: "100%", justifyContent: "center", background: "var(--navy)", color: "white", border: "1px solid rgba(11,155,68,0.3)" }}>Contact Sales</Link>
         </div>
       </div>
     </div>

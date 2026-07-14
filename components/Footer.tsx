@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -6,7 +7,13 @@ export default function Footer() {
       <div className="footer-inner">
         <div className="footer-brand">
           <div className="nav-logo">
-            <div className="nav-logo-mark">JT</div>
+            <Image
+              src="/logo-icon.png"
+              alt="Juvida Tax Pro"
+              width={44}
+              height={36}
+              className="nav-logo-mark"
+            />
             <div className="nav-logo-text">
               Juvida Tax <span>Pro</span>
             </div>
