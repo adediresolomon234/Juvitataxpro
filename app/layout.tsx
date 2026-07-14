@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   title: "Juvida Tax Pro — Professional Tax Software for Preparers",
   description:
     "Professional tax software built for service bureaus. E-filing, client management, compliance, and real-time reporting under one roof.",
+  openGraph: {
+    title: "Juvida Tax Pro — Professional Tax Software for Preparers",
+    description:
+      "Professional tax software built for service bureaus. E-filing, client management, compliance, and real-time reporting under one roof.",
+    images: ["/logo-full.png"],
+  },
+  twitter: {
+    card: "summary",
+    images: ["/logo-full.png"],
+  },
 };
 
 export const viewport = {

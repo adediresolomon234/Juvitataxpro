@@ -39,7 +39,7 @@ export default function ThankYouPage() {
           <Link
             href="/"
             className="btn-outline"
-            style={{ color: "var(--navy)", borderColor: "rgba(11,28,61,0.2)" }}
+            style={{ color: "var(--navy)", borderColor: "rgba(1,36,78,0.2)" }}
           >
             Back to Home
           </Link>
