@@ -180,7 +180,6 @@ export default function FeaturesPage() {
           <div className="plan-period">per tax season</div>
           <div className="plan-divider"></div>
           <ul className="plan-features">
-            <li><div className="plan-check">✓</div>Up to 1,000 federal returns</li>
             <li><div className="plan-check">✓</div>10 preparer seats</li>
             <li><div className="plan-check">✓</div>3 office locations</li>
             <li><div className="plan-check">✓</div>Bank products enabled</li>
